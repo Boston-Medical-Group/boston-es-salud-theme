@@ -1,9 +1,0 @@
-<?php
-
-namespace Bmg\Elemen
-tor;
-
-if ( ! defined( 'ABSPATH' ) ) exit;
-
-class Video extends 
-
