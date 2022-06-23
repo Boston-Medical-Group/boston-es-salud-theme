@@ -8,8 +8,6 @@ Helper::update_post_views(get_the_ID());
 global $video;
 ?>
 <article <?php post_class(); ?>>
-
-
 	<?php
 	$terms = get_the_terms(get_the_ID(), 'video_cat');
 	if (is_array($terms) && count($terms)) {
@@ -27,6 +25,12 @@ global $video;
 	?>
 
 	<div class="row">
+		<div class="col-lg-12">
+			<div class="gen-video-holder">
+				<?php masvideos_the_video(); ?>
+			</div>
+
+		</div>
 		<div class="col-lg-12">
 			<div class="gen-single-video-info">
 				<h2 class="gen-title"><?php the_title(); ?></h2>
@@ -93,5 +97,4 @@ global $video;
 
 		</div>
 	</div>
-
 </article>
