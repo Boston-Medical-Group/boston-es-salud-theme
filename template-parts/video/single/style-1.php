@@ -16,7 +16,7 @@ global $video;
 
 		<div class="row">
 			<div class="col-lg-12 gen-video-first-category">
-				<h2><?php echo $firstTerm["name"]; ?></h2>
+				<h2><?php echo $firstTerm->name; ?></h2>
 			</div>
 		</div>
 
